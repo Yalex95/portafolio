@@ -10,6 +10,7 @@
   --color-on-primary: #ffffff;
   --color-border: #e6edf3;
   --color-danger: #ef4444;
+--gradient-primary: linear-gradient(90deg, #6800F9 40%, #A805D0 74%);
 
   /* Typography */
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
