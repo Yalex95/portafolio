@@ -1,0 +1,61 @@
+
+:root{
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-surface: #f8fafc;
+  --color-primary: #4f46e5;
+  --color-primary-600: #4338ca;
+  --color-secondary: #06b6d4;
+  --color-muted: #6b7280;
+  --color-on-primary: #ffffff;
+  --color-border: #e6edf3;
+  --color-danger: #ef4444;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --fs-0: 0.75rem;   /* 12px */
+  --fs-1: 0.875rem;  /* 14px */
+  --fs-2: 1rem;      /* 16px */
+  --fs-3: 1.125rem;  /* 18px */
+  --fs-4: 1.25rem;   /* 20px */
+  --fs-6: 2.5rem;   /* 40px */
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+
+  /* Radii & shadows */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --shadow-sm: 0 1px 2px rgba(16,24,40,0.05);
+  --shadow-md: 0 8px 24px rgba(16,24,40,0.08);
+
+  /* Breakpoints */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+}
+
+/* Dark theme (toggle with [data-theme="dark"]) */
+[data-theme="dark"]{
+  --color-bg: #1D232A;
+  --color-surface: #6800F9;
+  --color-primary: #ECF9FF;
+  --color-primary-600: #6a4ef9;
+  --color-muted: #9aa4b2;
+  --color-border: #11202b;
+  --color-on-primary: #0b1220;
+}
+
+
+
+
+
+
+
+
+
+
