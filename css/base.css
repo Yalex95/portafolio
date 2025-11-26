@@ -12,16 +12,27 @@ body {
 h1,
 h2,
 h3,
-h4 {
-  color: inherit;
+h4,h5 {
+  color: var(--color-primary);
   margin: 0 0 var(--space-3) 0;
+  font-weight: bold;
 }
 h1 {
   font-size: var(--fs-6);
-  color: var(--color-primary);
-  font-weight: bold;
 }
-p{
+h2 {
+  font-size: var(--fs-5);
+}
+h3 {
+  font-size: var(--fs-4);
+}
+h4{
+  font-size: var(--fs-3);
+}
+h5{
+  font-size: var(--fs-0);
+}
+p {
   font-size: var(--fs-2);
   color: var(--color-primary);
 }

@@ -1,53 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yeris Aguilar</title>
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/tokens.css">
-  <link rel="stylesheet" href="./css/utilities.css">
-  <link rel="stylesheet" href="./css/components/button.css">
-  <link rel="stylesheet" href="./css/components/card.css">
-</head>
-<body data-theme="dark">
-  <main >
-    <section id="hero" class="container row">
-<article class="col">
-  <h1>Hi, I'm <span class="gradient-text">Yeris Aguilar</span></h1>
-  <p>Web Developer specializing in Nuxt.js, React, and modern JavaScript. I build exceptional digital experiences that combine elegant design with powerful functionality.
-</p>
-<button>Hire Me</button>
-<button>View Projects</button>
-<ul>
-  <li><a href=""><img src=""/></a></li>
-  <li><a href=""><img src=""/></a></li>
-  <li><a href=""><img src=""/></a></li>
-</ul>
-</article>
-<article class="col">
-  <img src="" alt="Yeris Aguilar"/>
-</article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeris Aguilar</title>
+    <link rel="stylesheet" href="./css/tokens.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/components/button.css" />
+    <link rel="stylesheet" href="./css/components/card.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
-    </section>
-    <section id="about" class="container row">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="/js/index.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <section id="hero" class="container row">
+        <article class="col gap-20 flex flex-col">
+          <div>
+            <h1>Hi, I'm <span class="gradient-text">Yeris Aguilar</span></h1>
+            <p>
+              Web Developer specializing in Nuxt.js, React, and modern
+              JavaScript. I build exceptional digital experiences that combine
+              elegant design with powerful functionality.
+            </p>
+          </div>
+          <div class="flex gap-20">
+            <button class="btn btn-primary">Hire Me</button>
+            <button class="btn btn-secondary">View Projects</button>
+          </div>
+          <ul class="social-list">
+            <li>
+              <a href=""
+                ><img src="./assets/icons/github.svg" alt="github profile"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="/assets/icons/linkedin.svg" alt="linkedin profile"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="assets/icons/email.svg" alt="email link"
+              /></a>
+            </li>
+          </ul>
+        </article>
+        <article class="col">
+          <img src="" alt="Yeris Aguilar" />
+        </article>
+      </section>
+      <!-- About section -->
+      <section id="about" class="container row">
+        <div class="col">
+          <h2>About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            accusamus excepturi iure vitae mollitia a quam soluta pariatur,
+            aliquam provident nobis officiis, accusantium ipsum repellat unde
+            neque, ipsa id placeat.
+          </p>
+        </div>
+        <ul class="card-container gap-20">
+          <li class="card p-4 flex-2 about-me-card justify-center flex-col">
+            <img src="/assets/icons/cleancode.svg" alt="Clean code" />
+            <div>
+              <h4 class="text-center">Clean Code</h4>
+              <p>
+                Writing maintainable, scalable code following best practices and
+                design patterns
+              </p>
+            </div>
+          </li>
+          <li class="card p-4 flex-2 about-me-card justify-center flex-col">
+            <img src="/assets/icons/ux-ui.svg" alt="Ux ui focused" />
+            <div>
+              <h4 class="text-center">UI/Ux Focus</h4>
+              <p>
+                Creating beautiful, intuitive interfaces with attention to every
+                detail
+              </p>
+            </div>
+          </li>
+          <li class="card p-4 flex-2 about-me-card justify-center flex-col">
+            <img src="/assets/icons/performance.svg" alt="Performance" />
+            <div>
+              <h4 class="text-center">Performance</h4>
+              <p>
+                Optimizing applications for speed, efficiency, and exceptional
+                user experience
+              </p>
+            </div>
+          </li>
+          <li class="card p-4 flex-2 about-me-card justify-center flex-col">
+            <img src="/assets/icons/collab.svg" alt="Collaboration" />
+            <div>
+              <h4 class="text-center">Collaboration</h4>
+              <p>
+                Working effectively in teams using Agile methodologies and
+                modern workflows
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Tech Skills -->
+      <section id="skills" class="container flex flex-col gap-50">
+        <h2 class="text-center">Technical Skills</h2>
 
+        <ul class="card-container gap-30">
+          <li class="flex-6 card p-4 skill-card justify-center flex-col">
+            <img src="/assets/icons/js.svg" alt="JavaScript" />
+            <h5 class="text-center">JavaScript</h5>
+          </li>
+          <li class="flex-6 card p-4 skill-card justify-center flex-col">
+            <img src="/assets/icons/git.svg" alt="Git" />
+            <h5 class="text-center">Git</h5>
+          </li>
+          <li class="flex-6 card p-4 skill-card justify-center flex-col">
+            <img src="/assets/icons/html.svg" alt="HTML" />
+            <h5 class="text-center">HTML</h5>
+          </li>
+          <li class="flex-6 card p-4 skill-card justify-center flex-col">
+            <img src="/assets/icons/vue.svg" alt="Vue" />
+            <h5 class="text-center">Vue</h5>
+          </li>
+          <li class="flex-6 card p-4 skill-card justify-center flex-col">
+            <img src="/assets/icons/ts.svg" alt="Typescript" />
+            <h5 class="text-center">Typescript</h5>
+          </li>
+          <li class="flex-6 card p-4 skill-card justify-center flex-col">
+            <img src="/assets/icons/css.svg" alt="CSS" />
+            <h5 class="text-center">CSS</h5>
+          </li>
+          <li class="flex-2 card p-4 gap-20">
+            <img src="/assets/icons/fullStack.svg" alt="Fullstack" />
+            <div>
+              <h4>Fullstack</h4>
+              <p>
+                Comfortable with both frontend and backend development
+                technologies
+              </p>
+            </div>
+          </li>
+          <li class="flex-2 card p-4 gap-20">
+            <img src="/assets/icons/apiIntegration.svg" alt="Api integration" />
+            <div>
+              <h4>API Integration</h4>
+              <p>
+                Seamlessly connecting applications with RESTful and GraphQL APIs
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="projects" class="container row justify-center">
+        <div class="text-center">
+          <h2>Featured Projects</h2>
+          <p>
+            A selection of recent projects showcasing my expertise in modern web
+            development, UI/UX design, and innovative solutions
+          </p>
+        </div>
+        <div class="card-container gap-50 justify-center">
+          <article class="project-card card flex-3 flex flex-col">
+            <img
+              src="/assets/img/proyect.png"
+              alt="Quality project screenshot"
+            />
+            <h3>GESTION ISO</h3>
+            <p>Cras at massa eget diam mattis porttitor eget amet lectus…</p>
 
-    </section>
-    <section id="skills" class="container row">
+            <div class="project-tech flex">
+              <span>Tailwind</span>
+              <span>HTML</span>
+              <span>Nuxt</span>
+            </div>
 
+            <div class="project-links">
+              <a href="#">GitHub</a>
+              <a href="#">Visit Site</a>
+            </div>
+          </article>
+          <article class="project-card card flex-3 flex flex-col">
+            <img
+              src="/assets/img/proyect.png"
+              alt="Quality project screenshot"
+            />
+            <h3>GESTION ISO</h3>
+            <p>Cras at massa eget diam mattis porttitor eget amet lectus…</p>
 
-    </section>
-    <section id="projects" class="container row">
+            <div class="project-tech">
+              <span>Tailwind</span>
+              <span>HTML</span>
+              <span>Nuxt</span>
+            </div>
 
+            <div class="project-links">
+              <a href="#">GitHub</a>
+              <a href="#">Visit Site</a>
+            </div>
+          </article>
+          <article class="project-card card flex-3 flex flex-col">
+            <img
+              src="/assets/img/proyect.png"
+              alt="Quality project screenshot"
+            />
+            <h3>GESTION ISO</h3>
+            <p>Cras at massa eget diam mattis porttitor eget amet lectus…</p>
 
-    </section>
-    <section id="experience" class="container row">
+            <div class="project-tech">
+              <span>Tailwind</span>
+              <span>HTML</span>
+              <span>Nuxt</span>
+            </div>
 
-
-    </section>
-  </main>
-</body>
+            <div class="project-links">
+              <a href="#">GitHub</a>
+              <a href="#">Visit Site</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="experience" class="container row timeline-section">
+        <div class="timeline">
+          <span class="line"></span>
+          <div class="timeline-icon">
+            <img src="assets/icons/job.svg" alt="" />
+          </div>
+          <div class="event left">
+            <div class="timeline-card">
+              <div class="flex row gap-20">
+                <img src="/assets/icons/job.svg" alt="" />
+                <div class="flex-col flex">
+                  <h5>Frontend Web Developer</h5>
+                  <p>Lorem ipsum, dolor sit amet consect</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum nostrum natus quas, aliquid laudantium
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum nostrum natus quas, aliquid laudantium
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum nostrum natus quas, aliquid laudantium
+                </li>
+              </ul>
+              <ul class="tech-stack">
+                <li>nuxt</li>
+                <li>nuxt</li>
+                <li>nuxt</li>
+              </ul>
+            </div>
+          </div>
+          <div class="event right">
+            <div class="timeline-card">
+              <div class="flex row gap-20">
+                <img src="/assets/icons/job.svg" alt="" />
+                <div class="flex-col flex">
+                  <h5>Frontend Web Developer</h5>
+                  <p>Lorem ipsum, dolor sit amet consect</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum nostrum natus quas, aliquid laudantium
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum nostrum natus quas, aliquid laudantium
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum nostrum natus quas, aliquid laudantium
+                </li>
+              </ul>
+              <ul class="tech-stack">
+                <li>nuxt</li>
+                <li>nuxt</li>
+                <li>nuxt</li>
+              </ul>
+            </div>
+          </div>
+          <div class="event left">
+            <div class="timeline-card">
+              <div class="flex row gap-20">
+                <img src="/assets/icons/job.svg" alt="" />
+                <div class="flex-col flex">
+                  <h5>Frontend Web Developer</h5>
+                  <p>Lorem ipsum, dolor sit amet consect</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum nostrum natus quas, aliquid laudantium
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum nostrum natus quas, aliquid laudantium
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum nostrum natus quas, aliquid laudantium
+                </li>
+              </ul>
+              <ul class="tech-stack">
+                <li>nuxt</li>
+                <li>nuxt</li>
+                <li>nuxt</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
