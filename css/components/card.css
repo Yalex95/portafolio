@@ -1,12 +1,61 @@
 .card {
   background: var(--color-surface);
   border-radius: var(--radius-md);
-  /* padding: var(--space-4); */
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0px 4px 10px 4px #0e1926;
+
   color: inherit;
   display: flex;
-  /* justify-content: center;
-  flex-direction: column; */
+}
+.card-body {
+  padding: 30px 20px 20px;
+}
+
+.project-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top:80%;
+  transform: translate(0,0);
+  transition: transform 2s ease, opacity 0.5s ease;
+}
+.project-links a {
+  text-decoration: none;
+  background-color: var(--color-on-primary);
+  color: var(--color-on-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  font-size: var(--fs-2);
+  font-weight: bold;
+}
+.card-image {
+  position: relative;
+  overflow: hidden;
+}
+.project-card:hover .project-links {
+  opacity: 1;
+  top:60%;
+  transform: translate(0, -50%);
+}
+.project-card:hover .card-image::before {
+  opacity: 1;
+}
+.card-image::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease;
+  background-color: rgba(20, 2, 45, 0.7);
+  opacity: 0;
 }
 li.card {
   list-style: none;
@@ -27,8 +76,8 @@ li.card {
   padding: 0;
   flex: 1;
   justify-content: center;
+  
 }
-
 
 .skill-card img {
   height: 32px;
@@ -41,4 +90,27 @@ li.card {
 .about-me-card img {
   width: 40px;
   height: 40px;
+}
+
+.project-tech {
+  list-style: none;
+  display: inline-flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0in;
+}
+.project-tech li img{
+  width: 15px;
+  height: 15px;
+}
+.project-tech li{
+  gap:5px;
+  align-items: center;
+  display: inline-flex;
+  background-color: var(--color-success);
+  padding: 4.5px 10px;
+  border-radius: 50px;
+  color: var(--color-on-secondary);
+  font-size: 10px;
+  
 }

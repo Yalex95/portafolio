@@ -1,36 +1,56 @@
-
 /* base button */
-.btn{
-  display:inline-flex;
-  align-items:center;
-  gap:0.5rem;
-  padding:14px;
-  border-radius:var(--radius-md);
-  border:unset;
-  cursor:pointer;
-  
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: unset;
+  cursor: pointer;
+
   font-size: var(--fs-2);
   font-weight: bold;
 }
 
 /* variants */
 
-.btn-primary{
-  background-color:var(--color-on-primary);
-  color:var(--color-on-secondary);
+.btn-primary {
+  background-color: var(--color-on-primary);
+  color: var(--color-on-secondary);
 }
-.btn-secondary{
-  background-color:var(--color-on-secondary);
-  color:var(--color-on-primary)
+.btn-secondary {
+  background-color: var(--color-on-secondary);
+  color: var(--color-on-primary);
 }
-
+.btn-icon {
+  gap: 10px;
+}
+.btn-icon img {
+  width: 20px;
+  height: 20px;
+}
 /* states */
 /* .btn:hover{  box-shadow:var(--shadow-md) } */
-.btn:active{ transform:translateY(0) }
-.btn:disabled{ opacity:0.5; cursor:not-allowed; transform:none }
+.btn:active {
+  transform: translateY(0);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
 
 /* outline modifier */
-.btn--outline{ background:transparent; color:var(--color-primary); border:1px solid var(--color-primary) }
+.btn--outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
 
 /* icon-only */
-.btn--icon{ padding:0.5rem; width:2.5rem; height:2.5rem; justify-content:center }
+.btn--icon {
+  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+}

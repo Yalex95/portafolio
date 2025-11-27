@@ -175,64 +175,33 @@
             development, UI/UX design, and innovative solutions
           </p>
         </div>
-        <div class="card-container gap-50 justify-center">
+        <div class="card-container gap-50 justify-center mt-3">
           <article class="project-card card flex-3 flex flex-col">
-            <img
-              src="/assets/img/proyect.png"
-              alt="Quality project screenshot"
-            />
-            <h3>GESTION ISO</h3>
-            <p>Cras at massa eget diam mattis porttitor eget amet lectus…</p>
-
-            <div class="project-tech flex">
-              <span>Tailwind</span>
-              <span>HTML</span>
-              <span>Nuxt</span>
+            <div class="card-image">
+              <img
+                src="/assets/img/proyect.png"
+                alt="Quality project screenshot"
+              />
+              <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">Visit Site</a>
+              </div>
             </div>
 
-            <div class="project-links">
-              <a href="#">GitHub</a>
-              <a href="#">Visit Site</a>
+            <div class="card-body">
+              <h4>Gestion ISO</h4>
+              <p>Cras at massa eget diam mattis porttitor eget amet lectus…</p>
+
+              <ul class="project-tech">
+                <li>
+                  <img src="/assets/icons/html.svg" alt="tailwind" /> Tailwind
+                </li>
+                <li><img src="/assets/icons/html.svg" alt="tailwind" />HTML</li>
+                <li><img src="/assets/icons/html.svg" alt="tailwind" />Nuxt</li>
+              </ul>
             </div>
           </article>
-          <article class="project-card card flex-3 flex flex-col">
-            <img
-              src="/assets/img/proyect.png"
-              alt="Quality project screenshot"
-            />
-            <h3>GESTION ISO</h3>
-            <p>Cras at massa eget diam mattis porttitor eget amet lectus…</p>
-
-            <div class="project-tech">
-              <span>Tailwind</span>
-              <span>HTML</span>
-              <span>Nuxt</span>
-            </div>
-
-            <div class="project-links">
-              <a href="#">GitHub</a>
-              <a href="#">Visit Site</a>
-            </div>
-          </article>
-          <article class="project-card card flex-3 flex flex-col">
-            <img
-              src="/assets/img/proyect.png"
-              alt="Quality project screenshot"
-            />
-            <h3>GESTION ISO</h3>
-            <p>Cras at massa eget diam mattis porttitor eget amet lectus…</p>
-
-            <div class="project-tech">
-              <span>Tailwind</span>
-              <span>HTML</span>
-              <span>Nuxt</span>
-            </div>
-
-            <div class="project-links">
-              <a href="#">GitHub</a>
-              <a href="#">Visit Site</a>
-            </div>
-          </article>
+          
         </div>
       </section>
       <section id="experience" class="timeline-section">
@@ -274,10 +243,7 @@
             </div>
           </div>
           <div class="event right">
-            <div class="timeline-icon">
-              <img src="assets/icons/job.svg" alt="" />
-            </div>
-            <div class="timeline-card right">
+            <div class="timeline-card left">
               <div class="flex row gap-20">
                 <img src="/assets/icons/job.svg" alt="" />
                 <div>
@@ -304,6 +270,9 @@
                 <li>nuxt</li>
                 <li>nuxt</li>
               </ul>
+            </div>
+            <div class="timeline-icon">
+              <img src="assets/icons/job.svg" alt="" />
             </div>
           </div>
           <div class="event left">
@@ -340,6 +309,12 @@
             </div>
           </div>
         </div>
+        <div class="flex justify-center mt-3">
+          <button class="btn btn-primary btn-icon">
+            Download CV
+            <img src="/assets/icons/download.svg" alt="download cv" />
+          </button>
+        </div>
       </section>
       <div class="social-media">
         <ul class="social-list">
@@ -364,21 +339,31 @@
       </div>
     </main>
     <footer class="flex items-center p-4 flex-col">
+      <ul class="navbar">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
       <ul class="social-list">
         <li>
           <a href=""
-            ><img src="./assets/icons/github.svg" alt="github profile"
+            ><img src="./assets/icons/Github_white.svg" alt="github profile"
           /></a>
         </li>
         <li>
           <a href=""
-            ><img src="/assets/icons/linkedin.svg" alt="linkedin profile"
+            ><img src="/assets/icons/linkedIn_white.svg" alt="linkedin profile"
           /></a>
         </li>
         <li>
-          <a href=""><img src="assets/icons/email.svg" alt="email link" /></a>
+          <a href=""
+            ><img src="assets/icons/mail_white.svg" alt="email link"
+          /></a>
         </li>
       </ul>
+      <p>Yeris Aguilar</p>
     </footer>
   </body>
 </html>

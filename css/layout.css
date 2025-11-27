@@ -47,7 +47,7 @@ Styles
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 .gradient-text {
@@ -132,7 +132,7 @@ timeline
   background: var(--color-surface);
   padding: 30px 20px;
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 700px;
   opacity: 0; /* GSAP */
   filter: blur(10px); /* GSAP */
   margin: 0 8rem;
@@ -150,6 +150,7 @@ timeline
   position: relative;
   padding-left: 30px; /* espacio para el icono */
   font-size: var(--fs-2);
+  line-clamp: 3;
 }
 
 .activities li::before {
@@ -196,4 +197,29 @@ timeline
 
 footer {
   background-color: var(--color-surface);
+}
+.m-auto {
+  margin: auto;
+}
+footer p {
+  color: var(--color-muted);
+}
+footer ul.navbar {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+footer ul.navbar a:hover {
+  color: var(--color-primary);
+}
+footer ul.navbar a {
+  font-size: var(--fs-2);
+  color: var(--color-muted);
+  text-decoration: none;
+}
+footer .social-list img {
+  filter: brightness(0.3);
+}
+footer .social-list img:hover {
+  filter: brightness(1);
 }
