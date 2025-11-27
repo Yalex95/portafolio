@@ -16,16 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out",
   });
 
-  tl.to(
-    ".timeline-icon",
-    {
-      opacity: 1,
-      scale: 1,
-      duration: 0.8,
-      ease: "back.out(1.5)",
-    },
-    "-=1"
-  );
+  // tl.to(
+  //   ".timeline-icon",
+  //   {
+  //     opacity: 1,
+  //     scale: 1,
+  //     duration: 0.8,
+  //     ease: "back.out(1.5)",
+  //   },
+  //   "-=1"
+  // );
 
   // Animar cada tarjeta
   gsap.utils.toArray(".event").forEach((event) => {

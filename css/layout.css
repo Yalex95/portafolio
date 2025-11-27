@@ -5,6 +5,7 @@
   padding-inline: var(--space-3);
 }
 
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -96,14 +97,16 @@ timeline
 }
 
 .timeline-icon {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   top: 150px;
-  transform: translateX(-50%);
-  opacity: 0; /* GSAP */
+  transform: translateX(-50%); */
+  /* opacity: 0; */
 }
 
 .event {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   width: 50%;
   margin: 100px 0;
@@ -122,4 +125,49 @@ timeline
   background: var(--color-surface);
   padding: 30px 20px;
   border-radius: 10px;
+  max-width: 500px;
+}
+
+
+.activities {
+  list-style: none; /* ocultar bullets */
+  padding: 0 30px 0 20px;
+}
+
+.activities li:not(li:last-child) {
+  margin-bottom: 10px;
+}
+.activities li {
+  position: relative;
+  padding-left: 30px; /* espacio para el icono */
+  font-size: var(--fs-2);
+
+}
+
+.activities li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  background-image: url("/assets/icons/checkMark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tech-stack{
+  display: flex;
+  gap:10px;
+  list-style:none;
+  padding: 0 0 0 20px;
+
+}
+.tech-stack li{
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-lg);
+  padding: 5px 10px;
+  color: var(--color-on-primary);
+  font-weight: 500;
+  text-transform: capitalize;
 }
