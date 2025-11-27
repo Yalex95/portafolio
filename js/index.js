@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".timeline-section",
-      start: "top 70%",
-      end: "bottom 50%",
-      scrub: 1,
+      start: "top 30%",
+      end: "bottom 30%",
+      scrub: 2,
     },
   });
 
@@ -16,19 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out",
   });
 
-  // tl.to(
-  //   ".timeline-icon",
-  //   {
-  //     opacity: 1,
-  //     scale: 1,
-  //     duration: 0.8,
-  //     ease: "back.out(1.5)",
-  //   },
-  //   "-=1"
-  // );
-
   // Animar cada tarjeta
-  gsap.utils.toArray(".event").forEach((event) => {
+  gsap.utils.toArray(".timeline-card").forEach((event) => {
     const side = event.classList.contains("left") ? -100 : 100;
 
     gsap.fromTo(

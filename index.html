@@ -17,6 +17,15 @@
     <script src="/js/index.js"></script>
   </head>
   <body>
+    <!-- <header>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header> -->
     <main class="main">
       <section id="hero" class="container row">
         <article class="col gap-20 flex flex-col">
@@ -228,6 +237,7 @@
       </section>
       <section id="experience" class="timeline-section">
         <div class="timeline">
+          <span class="line-gray"></span>
           <span class="line"></span>
 
           <div class="event left">
@@ -267,7 +277,7 @@
             <div class="timeline-icon">
               <img src="assets/icons/job.svg" alt="" />
             </div>
-            <div class="timeline-card">
+            <div class="timeline-card right">
               <div class="flex row gap-20">
                 <img src="/assets/icons/job.svg" alt="" />
                 <div>
@@ -295,10 +305,9 @@
                 <li>nuxt</li>
               </ul>
             </div>
-            
           </div>
           <div class="event left">
-            <div class="timeline-card">
+            <div class="timeline-card left">
               <div class="flex row gap-20">
                 <img src="/assets/icons/job.svg" alt="" />
                 <div>
@@ -332,6 +341,44 @@
           </div>
         </div>
       </section>
+      <div class="social-media">
+        <ul class="social-list">
+          <li>
+            <a href=""
+              ><img src="./assets/icons/Github_white.svg" alt="github profile"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="/assets/icons/linkedIn_white.svg"
+                alt="linkedin profile"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="assets/icons/mail_white.svg" alt="email link"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </main>
+    <footer class="flex items-center p-4 flex-col">
+      <ul class="social-list">
+        <li>
+          <a href=""
+            ><img src="./assets/icons/github.svg" alt="github profile"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img src="/assets/icons/linkedin.svg" alt="linkedin profile"
+          /></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/icons/email.svg" alt="email link" /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
