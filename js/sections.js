@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const content = document.querySelector(".main");
   const sections = document.querySelectorAll(".section");
   const section1 = document.querySelector("#hero");
-  const aboutSection = document.querySelector("#about");
+  const nextSection = document.querySelector("#skills");
   let winWidth = window.innerWidth;
 
   let smoother, observer, direction;
@@ -76,13 +76,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Section 2
     gsap.fromTo(
-      aboutSection,
+      nextSection,
       { autoAlpha: 0 },
       {
         autoAlpha: 1,
         duration: 2,
         scrollTrigger: {
-          trigger: aboutSection,
+          trigger: nextSection,
           start: "center 80%",
           end: "center center",
           scrub: true,
