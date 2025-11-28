@@ -22,10 +22,24 @@
   transform: translate(0,0);
   transition: transform 2s ease, opacity 0.5s ease;
 }
+.project-links a:first-child {
+  color: var(--color-on-secondary);
+
+  background-color: var(--color-on-primary);
+
+}
+.project-links a:last-child {
+  background-color: var(--color-on-secondary);
+  color: var(--color-on-primary);
+
+
+}
+.project-links a img{
+  width: 18px;
+  height: 18px;
+}
 .project-links a {
   text-decoration: none;
-  background-color: var(--color-on-primary);
-  color: var(--color-on-secondary);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -38,6 +52,9 @@
 .card-image {
   position: relative;
   overflow: hidden;
+}
+.project-card{
+  cursor: pointer;
 }
 .project-card:hover .project-links {
   opacity: 1;

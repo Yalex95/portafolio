@@ -55,15 +55,27 @@
 .items-center{
   align-items: center;
 }
+.mt-1{
+  margin-top: 1rem;
+}
+.mt-2{
+  margin-top: 2rem;
+}
 .mt-3{
   margin-top: 3rem;
 }
 .shadow{
   box-shadow: 0px 4px 4px 0px #0E1926;
 }
-.clamp-3 {
+.clamp-3 , .clamp-2{
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* número de líneas */
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.clamp-3{
+  -webkit-line-clamp: 3; /* número de líneas */
+
+}
+.clamp-2 {
+  -webkit-line-clamp: 2; /* número de líneas */
 }

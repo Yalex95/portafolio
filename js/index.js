@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".timeline-section",
-      start: "top 30%",
+      start: "top 40%",
       end: "bottom 30%",
       scrub: 2,
     },
@@ -19,29 +19,40 @@ document.addEventListener("DOMContentLoaded", () => {
   // Animar cada tarjeta
   gsap.utils.toArray(".timeline-card").forEach((event) => {
     const side = event.classList.contains("left") ? -100 : 100;
+    const parent = event.parentElement;
+    const icon = parent.querySelector(".timeline-icon");
+    gsap.to(icon, {
+      filter: "grayscale(0) blur(0px) ",
+      duration: 2,
+      ease: "back.out(1.7)",
+      scrollTrigger: {
+        trigger: event,
+        start: "top 60%",
+        end: "bottom 0%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
 
     gsap.fromTo(
       event,
       {
         x: side,
         opacity: 0,
-        filter: "blur(10px)"
+        filter: "blur(10px)",
       },
       {
         scrollTrigger: {
           trigger: event,
-          start: "top 80%",
-          end: "top 20%",
-          toggleActions: "play reverse play reverse"
+          start: "top 60%",
+          end: "top 0%",
+          toggleActions: "play reverse play reverse",
         },
         x: 0,
         opacity: 1,
         filter: "blur(0px)",
         duration: 1,
-        ease: "power3.out"
+        ease: "power3.out",
       }
     );
   });
-
-
 });
