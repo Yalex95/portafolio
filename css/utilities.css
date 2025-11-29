@@ -73,9 +73,9 @@
   overflow: hidden;
 }
 .clamp-3{
-  -webkit-line-clamp: 3; /* número de líneas */
+  -webkit-line-clamp: 3; 
 
 }
 .clamp-2 {
-  -webkit-line-clamp: 2; /* número de líneas */
+  -webkit-line-clamp: 2; 
 }

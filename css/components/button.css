@@ -30,7 +30,6 @@
   height: 20px;
 }
 /* states */
-/* .btn:hover{  box-shadow:var(--shadow-md) } */
 .btn:active {
   transform: translateY(0);
 }
