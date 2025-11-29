@@ -284,3 +284,25 @@ footer .social-list img:hover {
   height: 80%;
   background-color: var(--color-muted);
 }
+
+#hero ul.info{
+display: inline-flex;
+gap:20px;
+padding: 0;
+}
+#hero ul.info li{
+background-color: var(--color-surface);
+padding: 1rem;
+/* border-radius: 10px; */
+font-size: 10px;
+font-weight: bold;
+text-transform: uppercase;
+box-shadow: var();
+list-style: none;
+color: var(--color-secondary);
+}
+#hero .hero-img{
+    box-shadow: 0px 4px 68px 0px #6366F1;
+    border-radius: 50px;
+
+}
