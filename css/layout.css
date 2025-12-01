@@ -74,6 +74,12 @@ Styles
 timeline
 ---------------------------------------
 */
+.timeline-section{
+display: flex;
+gap: 8rem;
+flex-direction: column;
+
+}
 .timeline {
   position: relative;
   width: 90%;
@@ -169,6 +175,7 @@ timeline
 .tech-stack {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0 0 0 20px;
 }
@@ -248,6 +255,7 @@ footer .social-list img:hover {
 }
 
 .skill-list li {
+  min-height: 52px;
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--color-surface);

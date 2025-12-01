@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const content = document.querySelector(".main");
   const sections = document.querySelectorAll(".section");
   const section1 = document.querySelector("#hero");
-  const nextSection = document.querySelector("#skills");
+  const nextSection = document.querySelector("#about");
   let winWidth = window.innerWidth;
 
   let smoother, observer, direction;

@@ -55,4 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     );
   });
+
+
+  const yearSpan = document.getElementById('year');
+        const currentYr = new Date().getFullYear();
+        yearSpan.textContent = currentYr;
 });
