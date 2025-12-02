@@ -100,18 +100,24 @@ li.card {
   color: #0f172a;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  flex: 1;
-  justify-content: center;
+#projects .card-container {
+   display: flex;
+ flex-wrap: wrap;
+  /* padding: 0; */
+  /* flex: 1;
+  justify-content: center; */
   
 }
 
 .skill-card img {
   height: 32px;
   width: 32px;
+}
+#about-container .swiper-slide{
+  padding: 1rem;
+}
+.about-me-card{
+  flex-direction: column;
 }
 .about-me-card img,
 .skill-card img {

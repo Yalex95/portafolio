@@ -79,3 +79,30 @@
 .clamp-2 {
   -webkit-line-clamp: 2; 
 }
+
+
+/* 
+responsive
+*//* Mobile small (0–480px) */
+@media (max-width: 480px) { }
+
+/* Mobile medium (481–640px) */
+@media (min-width: 481px) and (max-width: 640px) { }
+
+/* Mobile large (641–768px) */
+@media (min-width: 641px) and (max-width: 768px) { }
+
+/* Tablets (769–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) { }
+
+/* Laptop (1025–1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) { }
+
+/* Desktop (1281–1536px) */
+@media (min-width: 1281px) and (max-width: 1536px) { }
+
+/* Full HD (1537–1920px) */
+@media (min-width: 1537px) and (max-width: 1920px) { }
+
+/* Ultra Wide (1921px+) */
+@media (min-width: 1921px) { }
