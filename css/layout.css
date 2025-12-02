@@ -276,16 +276,6 @@ footer .social-list img:hover {
   font-weight: 500;
 }
 
-/* .skills {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-} */
-/* .skills > div {
-  position: relative;
-  padding-right: 40px;
-  flex: 1;
-} */
 .skills > div:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -360,10 +350,6 @@ a.btn.btn-primary {
     gap: 2rem;
   }
 
-  /* .skills {
-    display: flex;
-    flex-direction: column;
-  } */
   #projects .card,
   .flex-3 {
     flex: 1 1 100%;
@@ -426,7 +412,6 @@ a.btn.btn-primary {
   .timeline-section {
     gap: 3rem;
   }
-  /*  */
 }
 @media (min-width: 641px) and (max-width: 989px) {
   .container {
