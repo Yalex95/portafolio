@@ -5,11 +5,13 @@ import { Icon } from "@iconify/vue";
 
 <template>
   <section class="flex gap-10 py-20 " id="hero">
-    <article class="w-1/2 flex flex-col">
-      <div class="badge badge-success uppercase text-white font-semibold">
+    <article class="w-1/2 flex flex-col gap-6">
+     <div>
+       <div class="badge badge-success uppercase text-white font-semibold mb-4">
         <Icon icon="tabler:circle-check-filled" width="14" />Available for work
       </div>
       <h2>Hi, I'm Yeris <br />Aguilar —</h2>
+     </div>
       <h1 class="gradient-text">
         Frontend <br />
         Developer
@@ -18,7 +20,7 @@ import { Icon } from "@iconify/vue";
         I build high-performance, value-driven web interfaces with a focus on
         modern user experiences and technical excellence.
       </p>
-      <div class="flex gap-10">
+      <div class="flex gap-6">
         <DaysiButton label="View Projects" />
         <DaysiButton
           label="Download"
@@ -37,7 +39,7 @@ import { Icon } from "@iconify/vue";
 </template>
 <style scoped>
 #hero {
-  background-image: url("../assets/hero_background.png");
+  background-image: url("../assets/hero_background.png"), linear-gradient(280deg,#fff 20%,#8e55e333 100% );
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
