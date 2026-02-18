@@ -3,11 +3,27 @@
   src: url("../fonts/Inter-Black.ttf") format("ttf");
   font-weight: bold;
 }
-body{
+body {
   font-family: "Inter";
 }
+
+[data-theme="dark"] {
+  --color-base-content: #fff;
+  --color-secondary-content: #94a3b8;
+  --color-primary-content: #fff;
+  --color-secondary-btn: rgba(255, 255, 255, 0.1);
+  --page-scroll-bg: #1d232a;
+}
+[data-theme="light"] {
+  --color-base-content: #334155;
+  --color-secondary-content: #475569;
+  --color-primary-content: #0f172a;
+  --color-secondary-btn: #ffffff;
+  --page-scroll-bg: #fff;
+
+}
 .btn {
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   justify-content: center;
   padding: 18px 32px;
@@ -24,14 +40,13 @@ body{
 }
 
 .btn-primary {
-
   color: #fff;
   background-color: #1313ec;
   box-shadow: 1px 1px 20px rgba(19, 19, 236, 0.2);
 }
 
 .btn-secondary {
-  color: #334155;
-  background-color: #fff;
+  color: var(--color-base-content);
+  background-color: var(--color-secondary-btn);
   box-shadow: 1px 1px 20px #0000003d;
 }

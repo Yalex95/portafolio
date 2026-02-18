@@ -9,10 +9,10 @@ const theme = computed(()=>themeStore.isDark?'dark':'light')
 </script>
 
 <template >
- <div :data-theme="theme" class="h-screen ">
-  <!-- <header>
-   <Nav></Nav>
- </header> -->
+ <div :data-theme="theme" >
+  <header>
+   <Nav/>
+ </header>
  <main >
 <Hero/>
  </main>

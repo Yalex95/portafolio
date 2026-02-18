@@ -1,50 +1,38 @@
 <script setup lang="ts">
+import { Icon } from "@iconify/vue";
+import ThemeToggle from "./theme-toggle.vue";
+import Drawer from "./drawer.vue";
+import type { NavItem } from "@/utils/types";
 
-import ThemeToggle from './theme-toggle.vue';
-
+const navItems: NavItem[] = [
+  { label: "Home", href: "#hero" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
 </script>
 
 <template>
-<div class="navbar bg-base-100 shadow-sm fixed">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+  <div class="navbar bg-base-100 shadow-sm container mx-auto">
+    <div class="navbar-start">
+      <div
+        class="text-base font-bold text-primary-content inline-flex items-center"
+      >
+        <img
+          src="../assets/icones/mdi_console.png"
+          class="inline-block object-fit w-8 h-8 mr-2"
+        />Yeris.dev
       </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li v-for="item in navItems" :key="item.label">
+          <a :href="item.href">{{ item.label }}</a>
         </li>
-        <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">daisyUI</a>
+    <div class="navbar-end">
+      <ThemeToggle />
+      <Drawer :navItems/>
+    </div>
   </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul class="p-2 bg-base-100 w-40 z-1">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <ThemeToggle></ThemeToggle>
-    <a class="btn">Button</a>
-  </div>
-</div>
 </template>
