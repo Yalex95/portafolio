@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Card } from "@/utils/types";
-import ExperienceCard from "../ui/card/experience-variant.vue";
+import techCard from "../ui/card/tech-card.vue";
 import Header from "../ui/header.vue";
 const coreStack: Card = {
   title: "Core Stack",
@@ -36,9 +36,9 @@ const learning: Card = {
     <div class="flex flex-col container mx-auto px-10 2xl:px-0 gap-10">
       <Header component="h2" label="Technical Expertise" />
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <ExperienceCard class="lg:col-span-1 lg:row-span-2 " :card="coreStack" />
-        <ExperienceCard :card="tools" />
-        <ExperienceCard :card="learning" />
+        <techCard class="lg:col-span-1 lg:row-span-2 " :card="coreStack" />
+        <techCard :card="tools" />
+        <techCard :card="learning" />
        
       </div>
     </div>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useThemeStore } from "@/stores/theme";
-import DaysiButton from "../ui/button/daysi-button.vue";
+import UiButton from "../ui/button/index.vue";
 import UiBadgeStatus from "../ui/badge/status.vue";
 const themeStore = useThemeStore();
 </script>
@@ -27,8 +27,8 @@ const themeStore = useThemeStore();
           modern user experiences and technical excellence.
         </p>
         <div class="hidden md:flex gap-6">
-          <DaysiButton label="View Projects" type="button" href="#projects" />
-          <DaysiButton
+          <UiButton label="View Projects" type="button" href="#projects" />
+          <UiButton
             variant="secondary"
             label="Download CV"
             icon="tabler:download"
@@ -43,8 +43,8 @@ const themeStore = useThemeStore();
           alt="Yeris Aguilar Frontend web developer"
         />
         <div class="flex flex-col w-full md:hidden gap-6">
-          <DaysiButton label="View Projects" type="button" href="#projects" />
-          <DaysiButton
+          <UiButton label="View Projects" type="button" href="#projects" />
+          <UiButton
             variant="secondary"
             label="Download CV"
             icon="tabler:download"
