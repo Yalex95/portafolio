@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import type { Card } from "@/utils/types";
-import techCard from "../ui/card/tech-card.vue";
+import TechCard from "../ui/card/tech-card.vue";
 import Header from "../ui/header.vue";
+import SectionBase from "../section/base.vue";
+
+
+
 const coreStack: Card = {
   title: "Core Stack",
   description: "Architecting modern, scalable frontends with precision and performance in mind.",
@@ -32,15 +36,13 @@ const learning: Card = {
 </script>
 
 <template>
-  <section id="tech" class="py-20">
-    <div class="flex flex-col container mx-auto px-10 2xl:px-0 gap-10">
-      <Header component="h2" label="Technical Expertise" />
+ <SectionBase id="tech">
+  <Header component="h2" label="Technical Expertise" />
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <techCard class="lg:col-span-1 lg:row-span-2 " :card="coreStack" />
-        <techCard :card="tools" />
-        <techCard :card="learning" />
+        <TechCard class="lg:col-span-1 lg:row-span-2 " :card="coreStack" />
+        <TechCard :card="tools" />
+        <TechCard :card="learning" />
        
       </div>
-    </div>
-  </section>
+ </SectionBase>
 </template>

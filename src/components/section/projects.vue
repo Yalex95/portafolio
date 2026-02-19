@@ -1,13 +1,33 @@
 <script setup lang="ts">
-import Header from '../ui/header.vue';
+import Header from "../ui/header.vue";
+import SectionBase from "../section/base.vue";
+import ProjectCard from "../ui/card/project-card.vue";
+import type { Card } from "@/utils/types";
 
-
+const projects: Card[] = [
+  {
+    title: "Project 1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
+    image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    href: "#",
+    badges: [
+      { label: "Vue.js", icon: "mdi:vuejs" },
+      { label: "TypeScript", icon: "mdi:language-typescript" },
+    ],
+  },
+];
 </script>
 
 <template>
-<section id="projects" class="py-20">
-  <div class="flex flex-col container mx-auto px-10 2xl:px-0">
-   <Header component="h2" label="Featured Projects"/>
-  </div>
-</section>
+  <SectionBase id="projects">
+    <Header component="h2" label="Featured Projects" />
+    <div>
+      <ProjectCard
+        v-for="(project, index) in projects"
+        :key="index"
+        :card="project"
+      />
+    </div>
+  </SectionBase>
 </template>
