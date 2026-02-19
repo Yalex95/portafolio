@@ -12,8 +12,9 @@ const navItems: NavItem[] = [
 </script>
 
 <template>
-  <div class="navbar bg-base-100 shadow-sm container mx-auto">
-    <div class="navbar-start">
+  <div class=" bg-base-100 shadow-sm ">
+    <div class="container mx-auto navbar">
+      <div class="navbar-start">
       <div
         class="text-base font-bold text-primary-content inline-flex items-center"
       >
@@ -33,6 +34,7 @@ const navItems: NavItem[] = [
     <div class="navbar-end">
       <ThemeToggle />
       <Drawer :navItems/>
+    </div>
     </div>
   </div>
 </template>

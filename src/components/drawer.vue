@@ -11,7 +11,7 @@ defineProps<{
   <input id="my-drawer-1" type="checkbox"  class=" w-full drawer-toggle" />
   <div class="drawer-content">
     <!-- Page content here -->
-    <label for="my-drawer-1" class="btn drawer-button "> <Icon for="my-drawer-1" icon="heroicons:bars-3-16-solid" width="24" class=""/></label>
+    <label for="my-drawer-1" class="btn drawer-button bg-transparent rounded-none shadow-none"> <Icon for="my-drawer-1" icon="heroicons:bars-3-16-solid" width="24" class=""/></label>
      
 
   </div>

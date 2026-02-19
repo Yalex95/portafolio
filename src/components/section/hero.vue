@@ -1,19 +1,14 @@
 <script setup lang="ts">
-import DaysiButton from "./daysi-button.vue";
-import { Icon } from "@iconify/vue";
+import DaysiButton from "../daysi-button.vue";
+import Badge from "../daysi-badge.vue";
 </script>
 
 <template>
   <section class="py-20" id="hero">
-    <div class="flex flex-col gap-10 container mx-auto px-10 2xl:px-0">
+    <div class="flex flex-col md:flex-row gap-10 container mx-auto px-10 2xl:px-0">
       <article class="w-full md:w-1/2 flex flex-col gap-6">
         <div>
-          <div
-            class="badge badge-success uppercase text-white font-semibold mb-4"
-          >
-            <Icon icon="tabler:circle-check-filled" width="14" />Available for
-            work
-          </div>
+          <Badge :badge="{label:'Available for work'}" />
           <h2 class="text-primary-content">Hi, I'm Yeris <br />Aguilar —</h2>
         </div>
         <h1 class="gradient-text">
@@ -27,7 +22,7 @@ import { Icon } from "@iconify/vue";
         <div class="hidden md:flex gap-6">
           <DaysiButton label="View Projects" />
           <DaysiButton
-            label="Download"
+            label="Download CV"
             icon="tabler:download"
             btn-type="btn-secondary"
           />
@@ -35,7 +30,7 @@ import { Icon } from "@iconify/vue";
       </article>
       <div class="flex-1 flex flex-col md:flex-row justify-center items-center">
         <img
-          src="../assets/yeris_aguilar.png"
+          src="../../assets/yeris_aguilar.png"
           alt="Yeris Aguilar Frontend web developer"
         />
         <div class="flex flex-col w-full md:hidden gap-6">
