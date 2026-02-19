@@ -2,15 +2,20 @@
 import { useThemeStore } from "@/stores/theme";
 import DaysiButton from "../ui/button/daysi-button.vue";
 import UiBadgeStatus from "../ui/badge/status.vue";
-const themeStore = useThemeStore()
+const themeStore = useThemeStore();
 </script>
 
 <template>
   <section class="py-20" id="hero">
-    <div class="flex flex-col md:flex-row gap-10 container mx-auto px-10 2xl:px-0">
+    <div
+      class="flex flex-col md:flex-row gap-10 container mx-auto px-10 2xl:px-0"
+    >
       <article class="w-full md:w-1/2 flex flex-col gap-6">
         <div class="gap-4 flex flex-col">
-          <UiBadgeStatus :is-dark="themeStore.isDark" :badge="{label:'Available for work'}" />
+          <UiBadgeStatus
+            :is-dark="themeStore.isDark"
+            :badge="{ label: 'Available for work' }"
+          />
           <h2 class="text-primary-content">Hi, I'm Yeris <br />Aguilar —</h2>
         </div>
         <h1 class="gradient-text">
@@ -22,11 +27,13 @@ const themeStore = useThemeStore()
           modern user experiences and technical excellence.
         </p>
         <div class="hidden md:flex gap-6">
-          <DaysiButton label="View Projects" />
+          <DaysiButton label="View Projects" type="button" href="#projects" />
           <DaysiButton
+            variant="secondary"
             label="Download CV"
             icon="tabler:download"
-            btn-type="btn-secondary"
+            type="button"
+            href="#"
           />
         </div>
       </article>
@@ -36,11 +43,13 @@ const themeStore = useThemeStore()
           alt="Yeris Aguilar Frontend web developer"
         />
         <div class="flex flex-col w-full md:hidden gap-6">
-          <DaysiButton label="View Projects" />
+          <DaysiButton label="View Projects" type="button" href="#projects" />
           <DaysiButton
-            label="Download"
+            variant="secondary"
+            label="Download CV"
             icon="tabler:download"
-            btn-type="btn-secondary"
+            type="button"
+            href="#"
           />
         </div>
       </div>
