@@ -1,14 +1,16 @@
 <script setup lang="ts">
-import DaysiButton from "../daysi-button.vue";
-import Badge from "../daysi-badge.vue";
+import { useThemeStore } from "@/stores/theme";
+import DaysiButton from "../ui/button/daysi-button.vue";
+import UiBadgeStatus from "../ui/badge/status.vue";
+const themeStore = useThemeStore()
 </script>
 
 <template>
   <section class="py-20" id="hero">
     <div class="flex flex-col md:flex-row gap-10 container mx-auto px-10 2xl:px-0">
       <article class="w-full md:w-1/2 flex flex-col gap-6">
-        <div>
-          <Badge :badge="{label:'Available for work'}" />
+        <div class="gap-4 flex flex-col">
+          <UiBadgeStatus :is-dark="themeStore.isDark" :badge="{label:'Available for work'}" />
           <h2 class="text-primary-content">Hi, I'm Yeris <br />Aguilar —</h2>
         </div>
         <h1 class="gradient-text">

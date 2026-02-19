@@ -15,6 +15,8 @@ body {
   --page-scroll-bg: #1d232a;
   --color-blue-200: rgba(19, 19, 236, 0.1);
   --color-blue-500: #1313ec;
+  --color-badge-bg:#00d390;
+
 }
 [data-theme="light"] {
   --color-base-content: #334155;
@@ -24,6 +26,10 @@ body {
   --page-scroll-bg: #fff;
   --color-blue-500: #1313ec;
   --color-blue-200: rgba(19, 19, 236, 0.1);
+  --color-badge-bg:#334155;
+}
+.badge-text{
+  color : var(--color-badge-bg)
 }
 .blue-500 {
   color: var(--color-blue-500);

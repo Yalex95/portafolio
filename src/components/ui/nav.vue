@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
+
 import ThemeToggle from "./theme-toggle.vue";
 import Drawer from "./drawer.vue";
 import type { NavItem } from "@/utils/types";

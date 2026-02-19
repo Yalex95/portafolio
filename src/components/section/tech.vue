@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Card } from "@/utils/types";
-import ExperienceCard from "../card-variants/experience-variant.vue";
-import Header from "../header.vue";
+import ExperienceCard from "../ui/card/experience-variant.vue";
+import Header from "../ui/header.vue";
 const coreStack: Card = {
   title: "Core Stack",
   description: "Architecting modern, scalable frontends with precision and performance in mind.",
@@ -19,10 +19,10 @@ const tools: Card = {
   title: "Tools",
   icon: "mdi:tools",
   badges: [
-    { label: "VS Code", icon: "mdi:microsoft-visual-studio-code" },
-    { label: "Git", icon: "mdi:git" },
-    { label: "GitHub", icon: "mdi:github" },
-    { label: "Figma", icon: "solar:figma-bold-duotone" },
+    { label: "VS Code", icon: "mdi:microsoft-visual-studio-code", },
+    { label: "Git", icon: "mdi:git", },
+    { label: "GitHub", icon: "mdi:github",  },
+    { label: "Figma", icon: "solar:figma-bold-duotone",  },
   ],
 };
 const learning: Card = {

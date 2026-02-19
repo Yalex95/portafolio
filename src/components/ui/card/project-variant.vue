@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Card } from "@/utils/types";
-import BaseCard from "../base-card.vue";
+import BaseCard from "./base-card.vue";
 defineProps<{
   card: Card;
 }>();

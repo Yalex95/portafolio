@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import type { Card } from "@/utils/types";
-import BaseCard from "../base-card.vue";
+import BaseCard from "./base-card.vue";
 import { Icon } from "@iconify/vue";
-import DaysiBadge from "../daysi-badge.vue";
+import UiBadgeIcon from "../badge/icon.vue";
+import { useThemeStore } from "@/stores/theme";
+
 defineProps<{
   card: Card;
 }>();
+
+const themeStore = useThemeStore();
 </script>
 
 <template>
@@ -42,10 +46,11 @@ defineProps<{
         </div>
         <p v-if="card.description">{{ card.description }}</p>
         <div class="card-actions" v-if="card.badges && card.badges?.length > 0">
-          <DaysiBadge
+          <UiBadgeIcon
             v-for="badge in card.badges"
             :key="badge.label"
             :badge
+            :is-dark="themeStore.isDark"
           />
         </div>
       </div>
