@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Black.ttf") format("ttf");
+  font-weight: bold;
+}
+body {
+  font-family: "Inter";
+}
+
+[data-theme="dark"] {
+  --color-base-content: #fff;
+  --color-secondary-content: #94a3b8;
+  --color-primary-content: #fff;
+  --color-secondary-btn: rgba(255, 255, 255, 0.1);
+  --page-scroll-bg: #1d232a;
+  --color-blue-200: rgba(19, 19, 236, 0.1);
+  --color-blue-500: #1313ec;
+  --color-badge-bg:#00d390;
+
+}
+[data-theme="light"] {
+  --color-base-content: #334155;
+  --color-secondary-content: #475569;
+  --color-primary-content: #0f172a;
+  --color-secondary-btn: #ffffff;
+  --page-scroll-bg: #fff;
+  --color-blue-500: #1313ec;
+  --color-blue-200: rgba(19, 19, 236, 0.1);
+  --color-badge-bg:#334155;
+}
+.timeline-bg{
+  background-color: linegradient(90deg, rgba(19, 19, 236, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.badge-text{
+  color : var(--color-badge-bg)
+}
+.blue-500 {
+  color: var(--color-blue-500);
+}
+.bg-blue-200 {
+  background-color: var(--color-blue-200);
+}
+.btn {
+  /* display: inline-flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 18px 32px;
+  border-radius: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  height: auto;
+  border: unset;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1313ec;
+  box-shadow: 1px 1px 20px rgba(19, 19, 236, 0.2);
+}
+
+.btn-secondary {
+  color: var(--color-base-content);
+  background-color: var(--color-secondary-btn);
+  box-shadow: 1px 1px 20px #0000003d;
+}
