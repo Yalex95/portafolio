@@ -7,6 +7,7 @@ import TechSection from "./components/section/tech.vue";
 import ExperienceSection from "./components/section/experience.vue";
 import ProjectsSection from "./components/section/projects.vue";
 import ThemeProvider from "./components/providers/theme-provider.vue";
+import ContactSection from './components/section/contact.vue';
 
 const themeStore = useThemeStore();
 </script>
@@ -21,6 +22,7 @@ const themeStore = useThemeStore();
       <TechSection />
       <ProjectsSection />
       <ExperienceSection />
+      <ContactSection/>
     </main>
     <footer></footer>
   </ThemeProvider>
