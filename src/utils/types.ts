@@ -21,5 +21,7 @@ export type eventItem = {
   time:string;
   event: string;
   eventDescription?: string;
-
+  location?: string;
+  company?: string;
+  tech?: Badge[];
 }
