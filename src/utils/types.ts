@@ -17,3 +17,9 @@ export type Card ={
   badges?: Badge[];
 isCoreStack? : boolean;
 }
+export type eventItem = {
+  time:string;
+  event: string;
+  eventDescription?: string;
+
+}

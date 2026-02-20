@@ -5,7 +5,7 @@ import { Icon } from "@iconify/vue";
 import UiBadgeIcon from "../badge/icon.vue";
 import { useThemeStore } from "@/stores/theme";
 
-defineProps<{
+const props = defineProps<{
   card: Card;
 }>();
 

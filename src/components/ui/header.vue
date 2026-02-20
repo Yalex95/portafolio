@@ -1,16 +1,16 @@
 <script lang="ts" setup>
 withDefaults(defineProps<{
   component?: 'h2' | 'h3' | 'h4';
-  className?: string;
+position?: 'start' | 'end' | 'center';
   label?: string;
 }>(),{
   component:'h2',
-  className:'text-2xl ',
+  position:'start',
   label:'title'
 })
 </script>
 <template>
-<component :is="component" :class="[className, 'font-bold text-base-content header-underline']">{{ label }}</component>
+<component :is="component"   v-bind="$attrs" :class="['font-bold text-2xl text-base-content header-underline',position]">{{ label }}</component>
 </template>
 <style scoped>
 .header-underline{
@@ -24,9 +24,15 @@ withDefaults(defineProps<{
   width: 6rem;
   height: 6px;
   background-color: var(--color-blue-500);
-  left: 0;
   bottom: 0;
   border-radius: 1rem;
+}
+.header-underline.start:after{
+  left: 0;
+}
+.header-underline.center:after{
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 </style>

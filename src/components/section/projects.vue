@@ -23,6 +23,7 @@ const projects: Card[] = [
   <SectionBase id="projects">
     <Header component="h2" label="Featured Projects" />
     <div>
+      <!-- TODO: add vue carrousel -->
       <ProjectCard
         v-for="(project, index) in projects"
         :key="index"
