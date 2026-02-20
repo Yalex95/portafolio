@@ -8,6 +8,7 @@ body {
 }
 
 [data-theme="dark"] {
+  /* TODO: agregar que el body cambie de theme desde aqui */
   --color-base-content: #fff;
   --color-secondary-content: #94a3b8;
   --color-primary-content: #fff;

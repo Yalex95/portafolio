@@ -21,6 +21,6 @@ const position = computed(()=> props.position ==='end'? 'timeline-end': 'timelin
       <div class="text-lg font-black">{{ event.event }}</div>
       {{ event.eventDescription }}
     </div>
-    <!-- <hr  class="time"/> -->
+    <hr  class="bg-primary"/>
   </li>
 </template>

@@ -5,22 +5,22 @@ import Timeline from "../ui/timeline/index.vue";
 
 const events = [
   {
-    time: "2020 - 2021",
-    event: "Software Engineer at Company A",
+    time: "2023 - Present",
+    event: "Frontend web develeoper at Telsur S.A",
     eventDescription:
-      "Worked on developing web applications using Vue.js and Node.js.",
+      "Developed and maintained responsive web aplication using Vue.js, Nuxt.js and Tailwind CSS, ensuring optimal performance and user experience.",
   },
   {
-    time: "2021 - Present",
-    event: "Senior Software Engineer at Company B",
+    time: "2022 - 2023",
+    event: "Frontend web developer at Horsepower Brands",
     eventDescription:
-      "Leading a team of developers in building scalable applications with microservices architecture.",
+      "Developed custom themes to meet the specific needs of the company, ensuring a unique and engaging user experience.",
   },
   {
-    time: "2021 - Present",
-    event: "Senior Software Engineer at Company B",
+    time: "2021 - 2021",
+    event: "Frontend web developer at Xenio",
     eventDescription:
-      "Leading a team of developers in building scalable applications with microservices architecture.",
+      "Maintained and updated existing web pages using php , js and css, ensuring optimal performance and user experience.",
   },
 ];
 </script>
