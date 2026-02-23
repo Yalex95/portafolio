@@ -54,14 +54,14 @@ const onSubmit = handleSubmit(async (values: Contact) => {
 </script>
 
 <template>
-  <div class="transparent-bg p-14 rounded-xl shadow-md w-full md:w-2/3 mx-auto">
+  <div class="transparent-bg p-6 md:p-14 rounded-xl shadow-md w-full lg:w-2/3 mx-auto">
     <Toast :show="toast.show" :label="toast.message" :alert-type="toast.type" />
     <div class="text-center">
       <slot name="header" />
     </div>
-    <form class="grid grid-cols-2 gap-4 mt-10" @submit.prevent="onSubmit">
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10" @submit.prevent="onSubmit">
       <slot name="inputs" :errors="errors" :loading="loading" />
-      <div class="flex justify-center items-center col-span-2">
+      <div class="flex justify-center items-center cols-span-1 md:col-span-2">
         <UiButton :label="props.submitLabel || 'submit'" type="submit" variant="gradient" />
       </div>
     </form>

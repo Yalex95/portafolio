@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from "@/utils/types";
-import { Icon } from "@iconify/vue";
+import UIButton from "./button/index.vue";
+
 import AppIcon from "./app-icon.vue";
 defineProps<{
   navItems: NavItem[];
@@ -16,8 +17,8 @@ defineProps<{
         for="my-drawer-1"
         class="btn drawer-button bg-transparent rounded-none shadow-none"
       >
-        <AppIcon icon="heroicons:bars-3-16-solid" size="24"/>
-    </label>
+        <AppIcon icon="heroicons:bars-3-16-solid" size="24" />
+      </label>
     </div>
     <div class="drawer-side">
       <label
@@ -29,6 +30,9 @@ defineProps<{
         <!-- Sidebar content here -->
         <li v-for="item in navItems" :key="item.label">
           <a :href="item.href">{{ item.label }}</a>
+        </li>
+        <li class="mt-4">
+          <UIButton label="Hire me!" type="button" href="#contact-me" />
         </li>
       </ul>
     </div>
