@@ -2,6 +2,7 @@
 import Header from "../ui/header.vue";
 import SectionBase from "../section/base.vue";
 import Timeline from "../ui/timeline/index.vue";
+import UiButton from "../ui/button/index.vue";
 
 const events = [
   {
@@ -57,9 +58,28 @@ const events = [
 <template>
   <SectionBase id="experience" class="bg-base-200">
     <Header component="h2" label="Experience" class="text-center" position="center"/>
-    <div class="lg:w-1/2 w-full mx-auto mt-10">
+    <div class="lg:w-1/2 w-full mx-auto mt-10 relative">
+      <div class="bg-blur"></div>
       <Timeline :events/>
-    </div>
       
+    </div>
+      <UiButton class="w-fit mx-auto"
+            
+            label="Download CV"
+            icon="tabler:download"
+            type="button"
+            href="#"
+          />
   </SectionBase>
 </template>
+<style scoped>
+.bg-blur{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(to top, var(--color-base-200), rgba(255, 255, 255, 0));
+  z-index: 1;
+}
+
+</style>
