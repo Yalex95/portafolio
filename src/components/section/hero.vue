@@ -11,7 +11,7 @@ const themeStore = useThemeStore();
     <div
       class="flex flex-col md:flex-row gap-10 container mx-auto px-10 2xl:px-0"
     >
-      <article class="w-full md:w-1/2 flex flex-col gap-6">
+      <article class="w-full  lg:w-1/2 flex flex-col gap-6">
         <div class="gap-4 flex flex-col">
           <UiBadgeStatus
             :is-dark="themeStore.isDark"
@@ -38,7 +38,7 @@ const themeStore = useThemeStore();
           />
         </div>
       </article>
-      <div class="flex-1 flex flex-col md:flex-row justify-center items-center">
+      <div class="flex-1 hidden lg:flex flex-col md:flex-row justify-center items-center">
         <img
           src="../../assets/yeris_aguilar.png"
           alt="Yeris Aguilar Frontend web developer"
