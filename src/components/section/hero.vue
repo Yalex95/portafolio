@@ -67,7 +67,7 @@ const themeStore = useThemeStore();
   background-size: contain;
 }
 #hero h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter-black", sans-serif;
   line-height: 36px;
   letter-spacing: -1.6px;
   font-weight: 800;
@@ -82,7 +82,7 @@ const themeStore = useThemeStore();
 
   display: inline-block;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Inter-black", sans-serif;
   font-size: 4rem;
 
   letter-spacing: -3px;
