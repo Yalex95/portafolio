@@ -2,7 +2,7 @@
 import AppIcon from "../app-icon.vue";
 import { computed } from "vue";
 
-type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "success";
+type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "success"|"gradient";
 type ButtonSize = "sm" | "md" | "lg";
 type ButtonType = "button" | "submit" | "reset";
 
@@ -41,7 +41,9 @@ const buttonClasses = computed(() => {
   const classes = ['btn', ];
   
   // Variante principal
-  if (props.variant === 'ghost') {
+  if (props.variant === 'gradient') {
+    classes.push('bg-gradient');
+  } else if (props.variant === 'ghost') {
     classes.push('btn-ghost');
   } else if (props.outline) {
     classes.push(`btn-outline btn-${props.variant}`);

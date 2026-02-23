@@ -38,8 +38,8 @@ const learning: Card = {
 <template>
  <SectionBase id="tech">
   <Header component="h2" label="Technical Expertise" />
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <TechCard class="lg:col-span-1 lg:row-span-2 " :card="coreStack" />
+      <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-6">
+        <TechCard class="md:col-span-1 lg:row-span-2 " :card="coreStack" />
         <TechCard :card="tools" />
         <TechCard :card="learning" />
        
