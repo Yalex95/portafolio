@@ -9,6 +9,7 @@ defineProps<{
 </script>
 <template>
   <BadgeBase :dark-theme="isDark">
+    
     <AppIcon v-if="badge.icon" :icon="badge.icon" width="16" class="badge-text"/>
     {{ badge.label }}
   </BadgeBase>

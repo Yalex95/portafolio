@@ -2,6 +2,7 @@
 import { useThemeStore } from "@/stores/theme";
 import UiButton from "../ui/button/index.vue";
 import UiBadgeStatus from "../ui/badge/status.vue";
+import { downloadCV } from "@/composables/download";
 const themeStore = useThemeStore();
 </script>
 
@@ -33,7 +34,7 @@ const themeStore = useThemeStore();
             label="Download CV"
             icon="tabler:download"
             type="button"
-            href="#"
+              @click="downloadCV()"
           />
         </div>
       </article>
@@ -49,7 +50,7 @@ const themeStore = useThemeStore();
             label="Download CV"
             icon="tabler:download"
             type="button"
-            href="#"
+            @click="downloadCV()"
           />
         </div>
       </div>

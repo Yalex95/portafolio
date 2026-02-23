@@ -46,11 +46,9 @@ defineProps<{
         placeholder="example@gmail.com"
         :disabled="loading"
       />
-    
-      <fieldset class="fieldset  md:col-span-2">
-        <legend class="fieldset-legend">
-          Message
-        </legend>
+
+      <fieldset class="fieldset md:col-span-2">
+        <legend class="fieldset-legend">Message</legend>
 
         <Field
           name="message"
@@ -58,7 +56,7 @@ defineProps<{
           id="message"
           rows="5"
           class="w-full rounded-xl textarea min-h-36"
-          :class="{'input-error': errors.message,  }"
+          :class="{ 'input-error': errors.message }"
           :disabled="loading"
         />
         <p
@@ -78,12 +76,13 @@ defineProps<{
   font-weight: 900;
   font-size: 1.5rem;
   margin-bottom: 10px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media (min-width: 768px) {
   #contact-me h2 {
     line-height: 40px;
     letter-spacing: -2px;
     font-size: 36px;
-  }}
-
+  }
+}
 </style>

@@ -25,13 +25,19 @@ const tools: Card = {
   badges: [
     { label: "VS Code", icon: "mdi:microsoft-visual-studio-code", },
     { label: "Git", icon: "mdi:git", },
-    { label: "GitHub", icon: "mdi:github",  },
+    { label: "Jira", icon: "mdi:jira",  },
+    { label: "ClickUp", icon: "lineicons:clickup",  },
     { label: "Figma", icon: "solar:figma-bold-duotone",  },
   ],
 };
 const learning: Card = {
   title: "Learning",
   icon: "mdi:book-open-variant",
+  badges:[
+    {label: "AWS", icon: "mdi:aws"},
+    {label: "Docker", icon: "mdi:docker"},
+  
+  ]
 };
 </script>
 

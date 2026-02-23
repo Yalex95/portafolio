@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+import { useThemeStore } from "@/stores/theme";
+
 import type { eventItem } from '@/utils/types';
 import AppIcon from '../app-icon.vue';
 import UiBadgeIcon from '../badge/icon.vue';
 import { computed } from 'vue';
-
+const themeStore = useThemeStore();
 
 const props = defineProps<{
 event: eventItem;
@@ -24,7 +26,7 @@ const position = computed(()=> props.position ==='end'? 'timeline-end ': 'timeli
       <p class="text-sm italic text-gray-500">{{ event.company }}</p>
       <p class="text-sm text-start">{{ event.eventDescription }}</p>
       <div class="flex gap-2 flex-wrap mt-4">
-        <UiBadgeIcon v-for="badge in event.tech" :key="badge.label" :badge="badge"/>
+        <UiBadgeIcon :is-dark="themeStore.isDark" v-for="badge in event.tech" :key="badge.label" :badge="badge"/>
       </div>
     </div>
     <hr  class="bg-primary"/>
