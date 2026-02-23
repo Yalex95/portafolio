@@ -1,13 +1,19 @@
-
- @font-face {
-  font-family: "Inter";
+@font-face {
+  font-family: "Inter-black";
   src: url("/fonts/Inter-Black.woff2") format("woff2");
   font-weight: 900;
 }
-body {
+@font-face {
   font-family: "Inter";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
 }
-
+body {
+  font-family: "Inter", sans-serif;
+}
+h2,h1 {
+  font-family: "Inter-black", sans-serif;
+}
 [data-theme="dark"] {
   /* TODO: agregar que el body cambie de theme desde aqui */
   --color-base-content: #fff;
@@ -17,8 +23,7 @@ body {
   --page-scroll-bg: #1d232a;
   --color-blue-200: rgba(19, 19, 236, 0.1);
   --color-blue-500: #1313ec;
-  --color-badge-bg:#00d390;
-
+  --color-badge-bg: #00d390;
 
   --color-transparent-bg: rgba(30, 41, 59, 0.7);
 }
@@ -30,20 +35,19 @@ body {
   --page-scroll-bg: #fff;
   --color-blue-500: #1313ec;
   --color-blue-200: rgba(19, 19, 236, 0.1);
-  --color-badge-bg:#334155;
+  --color-badge-bg: #334155;
 
   --color-transparent-bg: rgba(255, 255, 255, 0.4);
 }
 .transparent-bg {
   background-color: var(--color-transparent-bg);
   backdrop-filter: blur(10px);
-  
 }
-.bg-gradient{
-  background: linear-gradient(290deg, #9333ea 0%, #1313EC 100%);
+.bg-gradient {
+  background: linear-gradient(290deg, #9333ea 0%, #1313ec 100%);
   color: #fff;
 }
-.bg-overlay{
+.bg-overlay {
   background-image: url(../assets/yeris_dev_contact_mobile.png);
   background-position: top center;
   background-size: cover;
@@ -53,11 +57,15 @@ body {
     background-image: url(../assets/yeris_dev_contact.png);
   }
 }
-.timeline-bg{
-  background-color: linegradient(90deg, rgba(19, 19, 236, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+.timeline-bg {
+  background-color: linegradient(
+    90deg,
+    rgba(19, 19, 236, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
-.badge-text{
-  color : var(--color-badge-bg)
+.badge-text {
+  color: var(--color-badge-bg);
 }
 .blue-500 {
   color: var(--color-blue-500);

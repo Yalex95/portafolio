@@ -70,7 +70,7 @@ defineProps<{
 </template>
 <style scoped>
 #contact-me h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter-black", sans-serif;
   line-height: 30px;
   letter-spacing: -1.6px;
   font-weight: 900;
