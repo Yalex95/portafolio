@@ -27,12 +27,13 @@ const props = withDefaults(
       :name="props.name"
       :type="type || 'text'"
       :placeholder
-      class=" w-full"
+      class=" w-full rounded-xl"
       :class="{
         'input-error': props.error,
         'input': !type || type === 'text' || type === 'number' || type === 'password',
-        'textarea': type === 'textarea',
+        'textarea min-h-36': type === 'textarea',
       }"
+       v-bind="type === 'textarea' ? { rows:4 } : {}"
       :disabled="props.disabled"
     />
     <p
