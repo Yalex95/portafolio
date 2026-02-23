@@ -25,11 +25,11 @@ const year = date.getFullYear();
       <ExperienceSection />
       <ContactSection />
     </main>
-    <footer class="flex justify-between container mx-auto py-10">
+    <footer class="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 container mx-auto py-10 px-10">
       <Logo />
 
-      <p class="text-center  text-sm text-secondary-content ">
-        © {{ year }} Yeris Aguilar. Built with passion and TypeScript.
+      <p class="text-center  text-sm text-secondary-content order-3 md:order-2">
+        © {{ year }} Yeris Aguilar. Built with love ♥.
       </p>
       <Links/>
     </footer>
