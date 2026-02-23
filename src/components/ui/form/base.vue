@@ -31,7 +31,7 @@ const onSubmit = handleSubmit(async (values: Contact) => {
     submitted.value = true;
 
     setToast({
-      message: "information updated successfully",
+      message: "Message sent successfully!",
       type: "success",
       show: true,
     });

@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import { computed } from "vue";
 import Nav from "./components/ui/nav.vue";
-import { useThemeStore } from "./stores/theme";
 import HeroSection from "./components/section/hero.vue";
 import TechSection from "./components/section/tech.vue";
 import ExperienceSection from "./components/section/experience.vue";
 import ProjectsSection from "./components/section/projects.vue";
 import ThemeProvider from "./components/providers/theme-provider.vue";
-import ContactSection from './components/section/contact.vue';
+import ContactSection from "./components/section/contact.vue";
+import Logo from "./components/ui/logo.vue";
+import Links from "./components/ui/links.vue";
 
-const themeStore = useThemeStore();
+const date = new Date();
+const year = date.getFullYear();
 </script>
 
 <template>
-  <ThemeProvider >
+  <ThemeProvider>
     <header>
       <Nav />
     </header>
@@ -22,9 +23,16 @@ const themeStore = useThemeStore();
       <TechSection />
       <ProjectsSection />
       <ExperienceSection />
-      <ContactSection/>
+      <ContactSection />
     </main>
-    <footer></footer>
+    <footer class="flex justify-between container mx-auto py-10">
+      <Logo />
+
+      <p class="text-center  text-sm text-secondary-content ">
+        © {{ year }} Yeris Aguilar. Built with passion and TypeScript.
+      </p>
+      <Links/>
+    </footer>
   </ThemeProvider>
 </template>
 

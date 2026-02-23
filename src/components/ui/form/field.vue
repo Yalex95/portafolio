@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Field } from 'vee-validate';
+import { Field } from "vee-validate";
 
 const props = withDefaults(
   defineProps<{
@@ -23,23 +23,19 @@ const props = withDefaults(
     </legend>
 
     <Field
-      :as=" type === 'number' || 'password' ? 'input' : type || 'input' "
+      :as="type === 'number' || 'password' ? 'input' : type || 'input'"
       :name="props.name"
       :type="type || 'text'"
       :placeholder
-      class=" w-full rounded-xl"
+      class="w-full rounded-xl"
       :class="{
         'input-error': props.error,
-        'input': !type || type === 'text' || type === 'number' || type === 'password',
-        'textarea min-h-36': type === 'textarea',
+        input:
+          !type || type === 'text' || type === 'number' || type === 'password',
       }"
-       v-bind="type === 'textarea' ? { rows:4 } : {}"
+      :autocomplete="name"
       :disabled="props.disabled"
     />
-    <p
-      v-if="props.error"
-      class="label text-error"
-      v-html="props.error"
-    />
+    <p v-if="props.error" class="label text-error" v-html="props.error" />
   </fieldset>
 </template>

@@ -12,7 +12,7 @@ const themeStore = useThemeStore();
 </script>
 
 <template>
-  <BaseCard variant="project">
+  <BaseCard variant="project" class="md:w-96">
     <figure>
       <img :src="card.image" :alt="card.title" />
     </figure>
