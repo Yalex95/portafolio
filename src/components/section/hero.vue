@@ -38,7 +38,7 @@ const themeStore = useThemeStore();
           />
         </div>
       </article>
-      <div class="flex-1 hidden lg:flex flex-col md:flex-row justify-center items-center">
+      <div class="flex-1 flex md:hidden lg:flex flex-col md:flex-row justify-center items-center">
         <img
           src="../../assets/yeris_aguilar.png"
           alt="Yeris Aguilar Frontend web developer"
