@@ -3,7 +3,7 @@ import AppIcon from "../app-icon.vue";
 import { computed } from "vue";
 
 type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "success"|"gradient";
-type ButtonSize = "sm" | "md" | "lg";
+type ButtonSize = "xs" | "sm" | "md" | "lg";
 type ButtonType = "button" | "submit" | "reset";
 
 const props = withDefaults(
@@ -79,6 +79,16 @@ const linkAttributes = computed(() => {
     'rel': 'noopener noreferrer',
   };
 });
+const iconSize = computed(()=>{
+  if(props.size === 'xs') return 12;
+  if(props.size === 'sm') return 16;
+  if(props.size === 'md') return 20;
+  if(props.size === 'lg') return 24;
+  return 20;
+})
+const iconClass= computed(()=>{
+  return props.label ? 'mr-2' : '';
+})
 </script>
 <template>
   <component
@@ -91,8 +101,8 @@ const linkAttributes = computed(() => {
     <AppIcon
       v-if="icon && !loading"
       :icon
-      :width="size === 'lg' ? 24 : size === 'md' ? 20 : 16"
-      class="mr-2"
+      :size="iconSize"
+      :class="iconClass"
     />
     <span v-if="loading" class="loading-spinner mr-2" />
 
