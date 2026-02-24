@@ -21,7 +21,9 @@ const props = withDefaults(
     <legend class="fieldset-legend">
       {{ props.label }}
     </legend>
-
+    <label :for="props.name" class="sr-only">
+      {{ props.label }}
+    </label>
     <Field
       :as="type === 'number' || 'password' ? 'input' : type || 'input'"
       :name="props.name"
