@@ -73,7 +73,10 @@ const linkAttributes = computed(() => {
   return {
     'aria-disabled': props.disabled || props.loading,
     'tabindex': (props.disabled || props.loading) ? -1 : 0,
-    'role': 'button'
+    'role': 'button' ,
+    'aria-label': props.label || 'Link Button',
+    'target': '_blank',
+    'rel': 'noopener noreferrer',
   };
 });
 </script>

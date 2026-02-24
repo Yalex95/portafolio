@@ -49,7 +49,7 @@ defineProps<{
 
       <fieldset class="fieldset md:col-span-2">
         <legend class="fieldset-legend">Message</legend>
-
+        <label for="message" class="sr-only"> Message </label>
         <Field
           name="message"
           as="textarea"

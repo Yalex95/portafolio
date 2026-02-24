@@ -22,7 +22,7 @@ const socialLinks = [
 <template>
   <ul class="inline-flex gap-4 items-center">
     <li v-for="(socialMedia,index) in socialLinks" :key="index" class="inline-flex">
-      <a :href="socialMedia.url" target="_blank"><AppIcon :icon="socialMedia.icon" size="24"/></a>
+      <a :href="socialMedia.url" target="_blank" :aria-label="socialMedia.name" rel="noopener noreferrer"><AppIcon :icon="socialMedia.icon" size="24"/></a>
     </li>
   </ul>
 </template>
