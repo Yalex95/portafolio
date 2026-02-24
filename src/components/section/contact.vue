@@ -5,7 +5,11 @@ import ContactForm from "../ui/form/contact.vue";
 
 
 async function submit(values: Contact) {
-  console.log(values);
+  try {
+    
+  } catch (error) {
+    
+  }
 }
 </script>
 <template>

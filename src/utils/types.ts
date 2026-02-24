@@ -15,6 +15,7 @@ export type Card ={
   icon?: string;
   href?: string;
   badges?: Badge[];
+  githubLink?: string;
 isCoreStack? : boolean;
 }
 export type eventItem = {
