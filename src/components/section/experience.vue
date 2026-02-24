@@ -10,7 +10,7 @@ const events = [
     time: "2023 - Present",
     location: "Tijuana, BC Mexico",
     company: "Telsur S.A",
-    event: "Frontend web develeoper",
+    event: "Frontend web developer",
     eventDescription:
       "Developed and maintained responsive web aplication using Vue.js, Nuxt.js and Tailwind CSS, ensuring optimal performance and user experience.",
     tech: [
