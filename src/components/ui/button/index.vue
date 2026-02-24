@@ -86,6 +86,9 @@ const iconSize = computed(()=>{
   if(props.size === 'lg') return 24;
   return 20;
 })
+const iconClass= computed(()=>{
+  return props.label ? 'mr-2' : '';
+})
 </script>
 <template>
   <component
@@ -98,8 +101,8 @@ const iconSize = computed(()=>{
     <AppIcon
       v-if="icon && !loading"
       :icon
-      :width="iconSize"
-      :class="[{ 'mr-2': label }]"
+      :size="iconSize"
+      :class="iconClass"
     />
     <span v-if="loading" class="loading-spinner mr-2" />
 
