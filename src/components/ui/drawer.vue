@@ -12,7 +12,6 @@ defineProps<{
   <div class="drawer lg:hidden w-fit">
     <input id="my-drawer-1" type="checkbox" class="w-full drawer-toggle" />
     <div class="drawer-content">
-      <!-- Page content here -->
       <label
         for="my-drawer-1"
         class="btn drawer-button bg-transparent rounded-none shadow-none"
@@ -27,12 +26,11 @@ defineProps<{
         class="drawer-overlay"
       ></label>
       <ul class="menu bg-base-200 min-h-full w-80 p-4">
-        <!-- Sidebar content here -->
         <li v-for="item in navItems" :key="item.label">
           <a :href="item.href">{{ item.label }}</a>
         </li>
         <li class="mt-4">
-          <UIButton label="Hire me!" type="button" href="#contact-me" />
+          <UIButton label="Hire me!"  type="button" href="#contact-me" />
         </li>
       </ul>
     </div>
