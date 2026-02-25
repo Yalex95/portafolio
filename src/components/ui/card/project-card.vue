@@ -45,13 +45,7 @@ const themeStore = useThemeStore();
           :href="card.githubLink"
             target="_blank"
         />
-        <UiButton
-          v-if="card.githubLink"
-          variant="secondary"
-          icon="mdi:github-face"
-          type="button"
-          :href="card.githubLink"
-        />
+       
       </div>
     </div>
   </BaseCard>
