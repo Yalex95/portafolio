@@ -64,8 +64,8 @@ const projects: Card[] = [
     badges: [
       { label: "Wordpress", icon: "mdi:wordpress" },
       { label: "PHP", icon: "mdi:language-php" },
-      { label: "Elementor", icon: "mdi:elementor" },
-      {label: "Figma", icon: "mdi:figma" },
+      { label: "Elementor", icon: "fa7-brands:elementor" },
+      {label: "Figma", icon: "solar:figma-bold-duotone" },
     ],
   },
 ];
