@@ -74,7 +74,7 @@ const projects: Card[] = [
 <template>
   <SectionBase id="projects">
     <Header component="h2" label="Featured Projects" />
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-4 lg:gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-4 lg:gap-10 xl:gap-6">
       <!-- TODO: add vue carrousel -->
       <ProjectCard
         v-for="(project, index) in projects"
