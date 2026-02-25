@@ -8,6 +8,7 @@ import ThemeProvider from "./components/providers/theme-provider.vue";
 import ContactSection from "./components/section/contact.vue";
 import Logo from "./components/ui/logo.vue";
 import Links from "./components/ui/links.vue";
+import BackToTop from "./components/ui/back-to-top.vue";
 
 const date = new Date();
 const year = date.getFullYear();
@@ -33,6 +34,7 @@ const year = date.getFullYear();
       </p>
       <Links/>
     </footer>
+    <BackToTop/>
   </ThemeProvider>
 </template>
 

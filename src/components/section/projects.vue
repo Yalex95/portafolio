@@ -9,7 +9,7 @@ const projects: Card[] = [
     title: "Travel log",
     description:
       "A travel log app built with Vue.js and TypeScript, allowing users to document and share their travel experiences with an intuitive interface.Part of a CJ's video tutorial - Full stack app build",
-    image: "/public/travel_Log.png",
+    image: "/travel_Log.png",
     href: "https://nuxt-travel-log-fawn.vercel.app",
     githubLink: "https://github.com/Yalex95/nuxt-travel-log",
     badges: [
@@ -17,17 +17,17 @@ const projects: Card[] = [
       { label: "TypeScript", icon: "mdi:language-typescript" },
       { label: "Nuxt", icon: "mdi:nuxt" },
       {label: "Tailwind", icon: "mdi:tailwind" },
-      {label: "DaisyUI", icon: "mdi:daisy" },
-      {label: "Zod", icon: "mdi:zod"},
-      {label: "Vee-validate", icon: "mdi:vee-validate"},
-      {label: "drizzle", icon: "mdi:drizzle-orm"},
+      {label: "DaisyUI", icon: "logos:daisyui-icon" },
+      {label: "Zod", icon: "simple-icons:zod"},
+      {label: "Vee-validate", icon: "devicon:veevalidate"},
+      {label: "drizzle", icon: "simple-icons:drizzle"},
     ],
   },
   {
     title: "Movie Reservation System",
     description:
       "A movie reservation system built with Vue.js and TypeScript, allowing users to browse movies, select showtimes, and reserve seats. ",
-    image: "/public/movie_reservation_system.png",
+    image: "/movie_reservation_system.png",
     href: "https://movie-reservation-eight.vercel.app",
     githubLink: "https://github.com/Yalex95/movie_reservation",
     badges: [
@@ -35,31 +35,31 @@ const projects: Card[] = [
       { label: "TypeScript", icon: "mdi:language-typescript" },
       { label: "Nuxt", icon: "mdi:nuxt" },
       {label: "Tailwind", icon: "mdi:tailwind" },
-      {label: "DaisyUI", icon: "mdi:daisy" },
-      {label: "Zod", icon: "mdi:zod"},
-      {label: "Vee-validate", icon: "mdi:vee-validate"},
-      {label: "drizzle", icon: "mdi:drizzle-orm"},
-      {label: "Better Auth", icon: "mdi:better-auth"},
+      {label: "DaisyUI", icon: "logos:daisyui-icon" },
+      {label: "Zod", icon: "simple-icons:zod"},
+      {label: "Vee-validate", icon: "devicon:veevalidate"},
+      {label: "drizzle", icon: "simple-icons:drizzle"},
+      {label: "Better Auth", icon: "simple-icons:betterauth"},
     ],
   },
   {
     title: "Ticket Snipper",
     description:
       "Redesign of a landing page for ticket snipper build with WP and elementor, improving user experience through a modern and responsive design.",
-    image: "/public/Ts.png",
+    image: "/Ts.png",
     href: "https://www.ticketsnipers.com/",
     badges: [
       { label: "Wordpress", icon: "mdi:wordpress" },
       { label: "PHP", icon: "mdi:language-php" },
-      { label: "Elementor", icon: "mdi:elementor" },
-      {label: "Figma", icon: "mdi:figma" },
+      { label: "Elementor", icon: "fa7-brands:elementor" },
+      {label: "Figma", icon: "solar:figma-bold-duotone" },
     ],
   },
   {
     title: "D4L",
     description:
       "Redesign of DUI landing page build with WP and elementor, improving user experience through a modern and responsive design.",
-    image: "/public/dui_landing.png",
+    image: "/dui_landing.png",
     href: "https://www.dismissed4less.com/dui-dismissal/",
     badges: [
       { label: "Wordpress", icon: "mdi:wordpress" },

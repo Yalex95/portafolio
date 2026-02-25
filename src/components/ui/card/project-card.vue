@@ -35,6 +35,15 @@ const themeStore = useThemeStore();
           label="View Project"
           type="button"
           :href="card.href"
+          target="_blank"
+        />
+        <UiButton
+          v-if="card.githubLink"
+          variant="secondary"
+          icon="mdi:github-face"
+          type="button"
+          :href="card.githubLink"
+            target="_blank"
         />
         <UiButton
           v-if="card.githubLink"

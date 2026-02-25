@@ -8,6 +8,5 @@ class?: string;
 }>()
 </script>
 <template>
-  <!--TODO: que son $atts?? o de donde  viene-->
 <Icon :icon :width="size" :class v-bind="$attrs" />
 </template>
