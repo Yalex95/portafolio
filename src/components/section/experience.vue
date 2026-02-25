@@ -29,11 +29,16 @@ const events = [
     eventDescription:
       "Developed custom themes to meet the specific needs of the company, ensuring a unique and engaging user experience.",
     tech: [
-      { label: "Vue.js", icon: "mdi:vuejs" },
+      { label: "Js", icon: "devicon-plain:javascript" },
       { label: "TypeScript", icon: "mdi:language-typescript" },
-      { label: "Nuxt", icon: "mdi:nuxt" },
-      { label: "Tailwind CSS", icon: "mdi:tailwind" },
-      { label: "Pinia", icon: "simple-icons:pinia" },
+      { label: "Wordpress", icon: "ic:sharp-wordpress" },
+      { label: "PHP", icon: "akar-icons:php-fill" },
+      { label: "Laravel", icon: "flowbite:laravel-solid" },
+      { label: "Bootstrap", icon: "ri:bootstrap-fill" },
+      { label: "Elementor", icon: "simple-icons:elementor" },
+      { label: "Beaver Builder", icon: "fluent-emoji-high-contrast:beaver" },
+      { label: "JQuery", icon: "devicon-plain:jquery-wordmark" },
+
     ],
   },
   {
@@ -44,11 +49,11 @@ const events = [
     eventDescription:
       "Maintained and updated existing web pages using php , js and css, ensuring optimal performance and user experience.",
     tech: [
-      { label: "Vue.js", icon: "mdi:vuejs" },
-      { label: "TypeScript", icon: "mdi:language-typescript" },
-      { label: "Nuxt", icon: "mdi:nuxt" },
-      { label: "Tailwind CSS", icon: "mdi:tailwind" },
-      { label: "Pinia", icon: "simple-icons:pinia" },
+      { label: "Js", icon: "devicon-plain:javascript" },
+      { label: "PHP", icon: "akar-icons:php-fill" },
+      { label: "HTML", icon: "ri:html5-fill" },
+      { label: "Css", icon: "bi:css" },
+      { label: "JQuery", icon: "devicon-plain:jquery-wordmark" },
     ],
   },
 ];
