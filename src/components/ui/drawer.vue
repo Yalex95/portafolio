@@ -3,14 +3,22 @@ import type { NavItem } from "@/utils/types";
 import UIButton from "./button/index.vue";
 
 import AppIcon from "./app-icon.vue";
+import { ref } from "vue";
 defineProps<{
   navItems: NavItem[];
 }>();
+
+const drawer = ref<HTMLInputElement | null>(null);
+const toggleDrawer = () => {
+  if (drawer.value) {
+    drawer.value.checked = !drawer.value.checked;
+  }
+};
 </script>
 
 <template>
   <div class="drawer lg:hidden w-fit">
-    <input id="my-drawer-1" type="checkbox" class="w-full drawer-toggle" />
+    <input ref="drawer" id="my-drawer-1" type="checkbox" class="w-full drawer-toggle" />
     <div class="drawer-content">
       <label
         for="my-drawer-1"
@@ -27,10 +35,10 @@ defineProps<{
       ></label>
       <ul class="menu bg-base-200 min-h-full w-80 p-4">
         <li v-for="item in navItems" :key="item.label">
-          <a :href="item.href">{{ item.label }}</a>
+          <a :href="item.href" @click="toggleDrawer">{{ item.label }}</a>
         </li>
         <li class="mt-4">
-          <UIButton label="Hire me!"  type="button" href="#contact-me" />
+          <UIButton label="Hire me!"  type="button" href="#contact-me" @click="toggleDrawer" />
         </li>
       </ul>
     </div>
