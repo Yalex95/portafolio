@@ -32,7 +32,7 @@ const year = date.getFullYear();
       <p class="text-center  text-sm text-secondary-content order-3 md:order-2">
         © {{ year }} Yeris Aguilar. Built with love ♥.
       </p>
-      <Links/>
+      <Links class="order-2 md:order-3"/>
     </footer>
     <BackToTop/>
   </ThemeProvider>
