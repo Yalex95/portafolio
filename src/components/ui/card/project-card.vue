@@ -11,11 +11,11 @@ const themeStore = useThemeStore();
 </script>
 
 <template>
-  <BaseCard variant="project" class=" lg:w-96">
+  <BaseCard variant="project" >
     <figure >
       <img :src="card.image" :alt="card.title" class="h-48 w-96 object-cover object-top"/>
     </figure>
-    <div class="card-body flex-col gap-8">
+    <div class="card-body flex-col gap-8 justify-between">
       <div class="flex gap-4 flex-col">
         <h2 class="card-title">{{ card.title }}</h2>
         <p>{{ card.description }}</p>
@@ -29,7 +29,7 @@ const themeStore = useThemeStore();
           />
         </div>
       </div>
-      <div v-if="card.href" class="card-actions">
+      <div v-if="card.href" class="card-actions items-center">
         <UiButton
           variant="primary"
           label="View Project"
@@ -41,10 +41,12 @@ const themeStore = useThemeStore();
           v-if="card.githubLink"
           variant="secondary"
           icon="mdi:github-face"
+          
           type="button"
           :href="card.githubLink"
             target="_blank"
         />
+       
       </div>
     </div>
   </BaseCard>
