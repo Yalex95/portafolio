@@ -44,7 +44,7 @@ const themeStore = useThemeStore();
           alt="Yeris Aguilar Frontend web developer"
         />
         <div class="flex flex-col w-full md:hidden gap-6">
-          <UiButton label="View Projects" type="button" href="#projects" />
+          <UiButton label="View Projects" type="button" href="#projects"  />
           <UiButton
             variant="secondary"
             label="Download CV"

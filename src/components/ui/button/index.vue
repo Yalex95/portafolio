@@ -18,6 +18,7 @@ const props = withDefaults(
     disabled?: boolean;
     href?: string;
     type?: ButtonType;
+    target?: '_blank' | '_self' | '_parent' | '_top';
   }>(),
   {
     variant: "primary",
@@ -27,6 +28,7 @@ const props = withDefaults(
     block: false,
     loading: false,
     disabled: false,
+    target: '_self'
   },
 );
 const emit = defineEmits<{
@@ -69,14 +71,14 @@ const linkAttributes = computed(() => {
     disabled: props.disabled || props.loading,
     type: props.type,
   };
-  
+
   return {
     'aria-disabled': props.disabled || props.loading,
     'tabindex': (props.disabled || props.loading) ? -1 : 0,
     'role': 'button' ,
     'aria-label': props.label || 'Link Button',
-    'target': '_blank',
-    'rel': 'noopener noreferrer',
+    'target': props.target,
+    'rel': props.target === '_blank' ? 'noopener noreferrer' : undefined,
   };
 });
 const iconSize = computed(()=>{
