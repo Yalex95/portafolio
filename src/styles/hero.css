@@ -29,7 +29,7 @@
   }
   50% {
     transform: translateY(-20px) ;
-    filter: drop-shadow(0 0 35px rgba(19, 19, 236, 0.4));
+    filter: drop-shadow(0 0 45px rgba(19, 19, 236, 0.526));
   }
   100% {
     transform: translateY(0px) rotate(0deg);
