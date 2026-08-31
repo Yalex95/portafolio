@@ -5,6 +5,39 @@ import Timeline from "../ui/timeline/index.vue";
 import UiButton from "../ui/button/index.vue";
 import { downloadCV } from "@/composables/download";
 
+import { ref, onMounted, onUnmounted } from "vue";
+
+const section = ref<HTMLElement | null>(null);
+const isVisible = ref(false);
+
+let observer: IntersectionObserver | null = null;
+
+onMounted(() => {
+  const target = section.value;
+
+  if (!(target instanceof HTMLElement)) return;
+
+  observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry?.isIntersecting) {
+        isVisible.value = true;
+
+        observer?.disconnect();
+      }
+    },
+    {
+      threshold: 0.15,
+    },
+  );
+
+  observer.observe(target);
+});
+
+onUnmounted(() => {
+  observer?.disconnect();
+});
+
+
 const events = [
   {
     time: "2023 - Present",
@@ -38,7 +71,6 @@ const events = [
       { label: "Elementor", icon: "simple-icons:elementor" },
       { label: "Beaver Builder", icon: "fluent-emoji-high-contrast:beaver" },
       { label: "JQuery", icon: "devicon-plain:jquery-wordmark" },
-
     ],
   },
   {
@@ -60,25 +92,31 @@ const events = [
 </script>
 
 <template>
-  <SectionBase id="experience" class="bg-base-200">
-    <Header
-      component="h2"
-      label="Experience"
-      class="text-center"
-      position="center"
-    />
-    <div class="lg:w-1/2 w-full mx-auto mt-10 relative">
-      <div class="bg-blur"></div>
-      <Timeline :events />
-    </div>
-    <UiButton
-      class="w-fit mx-auto"
-      @click="downloadCV()"
-      label="Download CV"
-      icon="tabler:download"
-      type="button"
-    />
-  </SectionBase>
+  <div ref="section">
+    <SectionBase
+      id="experience"
+      class="bg-base-200"
+      :class="{ 'is-visible': isVisible }"
+    >
+      <Header
+        component="h2"
+        label="Experience"
+        class="text-center"
+        position="center"
+      />
+      <div class="lg:w-1/2 w-full mx-auto mt-10 relative">
+        <div class="bg-blur"></div>
+        <Timeline :events :is-visible="isVisible" />
+      </div>
+      <UiButton
+        class="w-fit mx-auto"
+        @click="downloadCV()"
+        label="Download CV"
+        icon="tabler:download"
+        type="button"
+      />
+    </SectionBase>
+  </div>
 </template>
 <style scoped>
 .bg-blur {

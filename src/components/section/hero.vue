@@ -3,6 +3,8 @@ import { useThemeStore } from "@/stores/theme";
 import UiButton from "../ui/button/index.vue";
 import UiBadgeStatus from "../ui/badge/status.vue";
 import { downloadCV } from "@/composables/download";
+import "@/styles/hero.css";
+
 const themeStore = useThemeStore();
 </script>
 
@@ -11,40 +13,44 @@ const themeStore = useThemeStore();
     <div
       class="flex flex-col md:flex-row gap-10 container mx-auto px-10 2xl:px-0"
     >
-      <article class="w-full  lg:w-1/2 flex flex-col gap-6">
+      <article class="w-full lg:w-1/2 flex flex-col gap-6">
         <div class="gap-4 flex flex-col">
           <UiBadgeStatus
             :is-dark="themeStore.isDark"
             :badge="{ label: 'Available for work' }"
           />
-          <h2 class="text-primary-content">Hi, I'm Yeris <br />Aguilar —</h2>
+          <h2 class="text-primary-content  slide-up-fast">
+            Hi, I'm Yeris <br />Aguilar —
+          </h2>
         </div>
-        <h1 class="gradient-text">
+        <h1 class="gradient-text slide-up-slow">
           Frontend <br />
           Developer
         </h1>
-        <p class="text-base text-secondary-content">
+        <p class="text-base text-secondary-content slide-up-slower">
           I build high-performance, value-driven web interfaces with a focus on
           modern user experiences and technical excellence.
         </p>
-        <div class="hidden md:flex gap-6">
+        <div class="hidden md:flex gap-6 slide-up-slowest">
           <UiButton label="View Projects" type="button" href="#projects" />
           <UiButton
             variant="secondary"
             label="Download CV"
             icon="tabler:download"
             type="button"
-              @click="downloadCV()"
+            @click="downloadCV()"
           />
         </div>
       </article>
-      <div class="flex-1 flex md:hidden lg:flex flex-col md:flex-row justify-center items-center">
-        <img
-          src="../../assets/yeris_aguilar.png"
+      <div
+        class="flex-1 flex md:hidden lg:flex flex-col md:flex-row justify-center items-center"
+      >
+        <img class="pulse-glow"
+          src="../../assets/yeris_aguilar_front.png"
           alt="Yeris Aguilar Frontend web developer"
         />
         <div class="flex flex-col w-full md:hidden gap-6">
-          <UiButton label="View Projects" type="button" href="#projects"  />
+          <UiButton label="View Projects" type="button" href="#projects" />
           <UiButton
             variant="secondary"
             label="Download CV"
