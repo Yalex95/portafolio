@@ -4,6 +4,9 @@ import Drawer from "./drawer.vue";
 import type { NavItem } from "@/utils/types";
 import Logo from "./logo.vue";
 import UIButton from "./button/index.vue";
+import "@/styles/navbar.css";
+
+
 const navItems: NavItem[] = [
   { label: "Home", href: "#hero" },
   { label: "Projects", href: "#projects" },
@@ -26,7 +29,12 @@ const navItems: NavItem[] = [
       </div>
       <div class="navbar-end">
         <ThemeToggle />
-        <UIButton label="Hire me!" type="button" href="#contact-me" class="hidden md:block"/>
+        <UIButton
+          label="Hire me!"
+          type="button"
+          href="#contact-me"
+          class="hidden md:block"
+        />
         <Drawer :navItems />
       </div>
     </div>
